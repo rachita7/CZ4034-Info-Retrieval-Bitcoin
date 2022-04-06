@@ -2,7 +2,7 @@
 
 CZ4034 - Information Retrieval
 
-![](./assets/banner.png)
+![](./assets/logo.png)
 
 Twitter News Retrieval System on the US Presedential Elections 2020
 
