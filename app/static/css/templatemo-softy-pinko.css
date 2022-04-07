@@ -555,13 +555,12 @@ section.featured-places {
 	right: 30px;
 	color: #fff;
 	text-align: center;
-	width: 90px;
-	height: 90px;
+	width: 300px;
+	height: 100px;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	background-color: #4883ff;
-	border-radius: 50%;
 }
 
 .featured-places .featured-item .thumb .date-content h6 {
@@ -2012,4 +2011,5 @@ preloader
 	100% {
 		opacity: 0;
 	}
+	
 }

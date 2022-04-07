@@ -3,11 +3,6 @@
 	<div class="header-text">
 		<div class="container">
 			<div class="row">
-				<div
-					class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12"
-				>
-					<h1><strong>CRYPTO</strong></h1>
-				</div>
 				<div class="banner">
 					<div class="col-md-12">
 						<div class="submit-form">
@@ -386,6 +381,11 @@
 						{% if tweet['inference'][0] == 'Positive Sentiment' %}
 
 						<div class="date-content">
+							<h6 style="color: white;">{{tweet.inference[0]}}</h6>
+						</div>
+						{% elif tweet['inference'][0] == 'Neutral Sentiment'  %}
+
+						<div class="date-content2" word-wrap: break-word>
 							<h6 style="color: white;">{{tweet.inference[0]}}</h6>
 						</div>
 
