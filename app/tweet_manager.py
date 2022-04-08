@@ -37,7 +37,7 @@ class TweetManager:
         except:
             logging.error("Error in getting tweets by exact match") 
             return []
-        tweets =  list(map(lambda x: x, respon)) + list(map(lambda x: x, response)) 
+        tweets =  list(map(lambda x: x, respon)) + list(map(lambda x: x, response))
         return tweets
 
 
@@ -107,4 +107,4 @@ class TweetManager:
     
     @staticmethod
     def rank_by_user(tweets):
-        return sorted(tweets, key= lambda x: x['username'][0], reverse=True)
+        return sorted(tweets, key= lambda x: x['followersCount'][0], reverse=True)

@@ -16,6 +16,8 @@ def filter(search_query, ranking= None, countries = []):
         tweets = TweetManager.rank_by_retweets_tweets(tweets)
     elif ranking == "Positive":
         tweets = TweetManager.rank_by_positive(tweets)
+    elif ranking == "user":
+        tweets = TweetManager.rank_by_user(tweets)
 
     return tweets[:15] if len(tweets) > 15 else tweets, spellcheck_suggestions
 
