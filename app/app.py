@@ -38,10 +38,9 @@ def search_results():
     return render_template('pages/search.html')
 
 
-@application.route("/plotly")
-def plotly():
-    filename = request.args.get('filename')
-    return send_from_directory(f"{BASE_DIR}/static/js", filename=filename)
+@application.route("/map")
+def map():
+	return render_template('pages/map.html')
 
 
 if __name__ == "__main__":
