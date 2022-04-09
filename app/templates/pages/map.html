@@ -1,0 +1,57 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="welcome-area" id="welcome">
+	<div class="header-text">
+		<div class="container">
+			<div class="row">
+				<div
+					class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12"
+				>
+					<h1><strong>CRYPTO</strong></h1>
+					
+					<a href="#map" class="main-button-slider">View Word Cloud</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 
+<div id="map">
+	<div id="container">
+	<h1>General Word Cloud</h1>
+	<img src="static/images/generalwordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;">
+	<h1>Positive Sentiment Word Cloud</h1>
+	<img src="/static/images/positivewordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;">
+	<h1>Negative Sentiment Word Cloud</h1>
+	<img src="static/images/negativewordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;">
+	</div>
+</div>
+ -->
+ </div>
+ <div id="map">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	<script type="text/javascript">
+		window.PlotlyConfig = { MathJaxConfig: 'local' };
+		
+	</script>
+	<script
+		type="text/javascript"
+		src="http://127.0.0.1:8000/plotly?filename=1.min.js"
+	></script>
+	<div
+		<div id="container">
+	<h1><center><strong>General Word Cloud</strong></center></h1>
+	<center><img src="static/images/generalwordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;"></center>
+	<h1><center><strong>Positive Sentiment Word Cloud</strong></center></h1>
+	<center><img src="/static/images/positivewordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;"></center>
+	<h1><center><strong>Negative Sentiment Word Cloud</strong></center></h1>
+	<center><img src="static/images/negativewordcloud.png" alt="General Word Cloud" style="width:500px;height:500px;"></center>
+	</div>
+	></div>
+	<script
+		type="text/javascript"
+		src="http://127.0.0.1:8000/plotly?filename=2.min.js"
+	></script>
+</div>
+
+
+{% endblock %}
