@@ -4,12 +4,12 @@ CZ4034 - Information Retrieval
 
 ![](./assets/logo.png)
 
-Twitter News Retrieval System on the US Presedential Elections 2020
+Twitter News Retrieval System on the Bitcoin Cryptocurrency for 2021
 
 This project contains 3 main sections
 1. Crawling
 
-    We utilized snscrape to crawl Twitter and collected tweets regarding the US Presedential Elections from various countries.
+    We utilized snscrape to crawl Twitter and collected tweets regarding the Bitcoin Cryptocurrency from various countries.
     The Crawled data had the following columns:
     | Field Name | Description |
     | ---------- | ----------- |
@@ -20,6 +20,8 @@ This project contains 3 main sections
     | replycount | Contains the number of people that commented on the tweet|
     | retweetcount| Contains the number of people that shared that particular tweet|
     | likecount  | Contains the number of people that liked that particular tweet|
+    | followersCount| Contains the number of followers the twitter user has|
+    | verified | Contains a boolean status indicating whether the user is verfied or not|
 <br/>
 
 2. Indexing and Querying
@@ -31,14 +33,12 @@ This project contains 3 main sections
 
 3. Sentiment Analysis
 
-    Model Performance:
-    | Model | F1 Score | Accuracy | Precision | Recall |
-    | ----- | -------- | -------- | --------- | ------ |
-    | Bert  | 0.74490  | 0.73737  | 0.75258   | 0.73737 |
+    Final Model Performance:
+    | Model    | F1 Score | Accuracy | Precision | Recall |
+    | -------- | -------- | -------- | --------- | ------ |
+    | RoBERTa  | 0.78     | 0.78     | 0.78      | 0.78  |
     
-
-    We also implemented a weighted sentiment analysis model which would evalutate the sentiment score based on the number of likes, comments and retweets. This helped us calculate the influence each tweet had. To find out more on this, click [here](./docs/report.pdf)
-<br/>
+Enhancements applied: After PCA analysis, we could notice the places where our model was lacking due to which we implemented Data Augmentation and model Fine-Tuning to increase accuracy. 
 
 ## Quickstart
 
