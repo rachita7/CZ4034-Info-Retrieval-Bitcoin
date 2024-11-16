@@ -1,6 +1,6 @@
-# Information Retrieval System
+# 💰 Bitcoin Tweet Retrival & Classification
 
-CZ4034 - Information Retrieval
+Academic Project for CZ4034 Information Retrieval (NTU)
 
 ![](./assets/logo.png)
 
